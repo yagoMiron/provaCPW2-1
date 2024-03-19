@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimo.io</title>
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+
+</head>
+
+<body>
+    <div class="component">
+        <div id="input_table">
+            <div>
+                <h4>Selecione o valor do emprestimo:</h4>
+                <input id="valor_emprestimo" type="number" min="500">
+            </div>
+            <div>
+                <h4>Selecione em quantas parcelas deseja pagar:</h4>
+                <input id="numero_parcelas" type="number" min="1" max="24">
+            </div>
+            <div class="input_radio">
+                <h4>Qual seu tipo de cliente?</h4>
+
+                <label for="standard">Standard:</label>
+                <input id="standard" type="radio" name="cliente_tipo" checked ><br>
+
+                <label for="platinum">Platinum:</label>
+                <input id="platinum" type="radio" name="cliente_tipo"><br>
+
+                <label for="gold">Gold:</label>
+                <input id="gold" type="radio" name="cliente_tipo">
+            </div>
+
+            <button id="send_button">Calcular emprestimo</button>
+        </div>
+    </div>
+    <div id="componentBox">
+</div>
+    <script src="app/index.js"></script>
+</body>
+
+</html>
